@@ -13,7 +13,7 @@ a module that enables copy-paste and drag/drop for Quill.
 
 ```javascript
 import Quill from "quill";
-import FileResize from "quill-file-resize";
+import FileResize from "quill-file-resize-module";
 
 Quill.register("modules/fileResize", FileResize);
 
@@ -145,7 +145,7 @@ the module setup.
 For example,
 
 ```javascript
-import { Resize, BaseModule } from "quill-file-resize";
+import { Resize, BaseModule } from "quill-file-resize-module";
 
 class MyModule extends BaseModule {
 	// See src/modules/BaseModule.js for documentation on the various lifecycle callbacks
