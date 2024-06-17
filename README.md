@@ -1,6 +1,7 @@
 # Quill Image/Video Resize Module
 
-forked from kensnyder/quill-image-resize-module
+Forked from kensnyder/quill-image-resize-module [quill-image-resize-module](https://github.com/kensnyder/quill-image-resize-module)
+
 A module for Quill rich text editor to allow images/videos to be resized.
 
 Also see [quill-image-drop-module](https://github.com/kensnyder/quill-image-drop-module),
