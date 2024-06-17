@@ -1,6 +1,6 @@
 # Quill ImageResize Module
 
-A module for Quill rich text editor to allow images to be resized.
+A module for Quill rich text editor to allow images/videos to be resized.
 
 Also see [quill-image-drop-module](https://github.com/kensnyder/quill-image-drop-module),
 a module that enables copy-paste and drag/drop for Quill.
@@ -15,41 +15,20 @@ a module that enables copy-paste and drag/drop for Quill.
 
 ```javascript
 import Quill from 'quill';
-import { ImageResize } from 'quill-image-resize-module';
+import FileResize from 'quill-file-resize';
 
-Quill.register('modules/imageResize', ImageResize);
+Quill.register('modules/fileResize', FileResize);
 
 const quill = new Quill(editor, {
     // ...
     modules: {
         // ...
-        imageResize: {
+        fileResize: {
             // See optional "config" below
         }
     }
 });
 ```
-
-### Script Tag
-
-Copy image-resize.min.js into your web root or include from node_modules
-
-```html
-<script src="/node_modules/quill-image-resize-module/image-resize.min.js"></script>
-```
-
-```javascript
-var quill = new Quill(editor, {
-    // ...
-    modules: {
-        // ...
-        ImageResize: {
-            // See optional "config" below
-        }
-    }
-});
-```
-
 ### Config
 
 For the default experience, pass an empty object, like so:
@@ -58,7 +37,7 @@ var quill = new Quill(editor, {
     // ...
     modules: {
         // ...
-        ImageResize: {}
+        fileResize: {}
     }
 });
 ```
@@ -71,7 +50,7 @@ const quill = new Quill(editor, {
     // ...
     modules: {
         // ...
-        ImageResize: {
+        fileResize: {
             modules: [ 'Resize', 'DisplaySize', 'Toolbar' ]
         }
     }
@@ -80,9 +59,9 @@ const quill = new Quill(editor, {
 
 Each module is described below.
 
-#### `Resize` - Resize the image
+#### `Resize` - Resize the file
 
-Adds handles to the image's corners which can be dragged with the mouse to resize the image.
+Adds handles to the file's corners which can be dragged with the mouse to resize the file.
 
 The look and feel can be controlled with options:
 
@@ -91,7 +70,7 @@ var quill = new Quill(editor, {
     // ...
     modules: {
         // ...
-        ImageResize: {
+        fileResize: {
             // ...
             handleStyles: {
                 backgroundColor: 'black',
@@ -106,7 +85,7 @@ var quill = new Quill(editor, {
 
 #### `DisplaySize` - Display pixel size
 
-Shows the size of the image in pixels near the bottom right of the image.
+Shows the size of the image in pixels near the bottom right of the file.
 
 The look and feel can be controlled with options:
 
@@ -115,7 +94,7 @@ var quill = new Quill(editor, {
     // ...
     modules: {
         // ...
-        ImageResize: {
+        fileResize: {
             // ...
             displayStyles: {
                 backgroundColor: 'black',
@@ -130,7 +109,7 @@ var quill = new Quill(editor, {
 
 #### `Toolbar` - Image alignment tools
 
-Displays a toolbar below the image, where the user can select an alignment for the image.
+Displays a toolbar below the image, where the user can select an alignment for the file.
 
 The look and feel can be controlled with options:
 
@@ -139,7 +118,7 @@ var quill = new Quill(editor, {
     // ...
     modules: {
         // ...
-        ImageResize: {
+        fileResize: {
             // ...
             toolbarStyles: {
                 backgroundColor: 'black',
@@ -176,7 +155,7 @@ var quill = new Quill(editor, {
     // ...
     modules: {
         // ...
-        ImageResize: {
+        fileResize: {
             modules: [ MyModule, Resize ],
             // ...
         }
