@@ -1,4 +1,4 @@
-# Quill ImageResize Module
+# Quill Image/Video Resize Module
 
 A module for Quill rich text editor to allow images/videos to be resized.
 
