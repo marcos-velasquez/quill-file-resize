@@ -12,7 +12,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/kensnyder/quill-file-resize.git"
+		"url": "git+https://github.com/marcos-velasquez/quill-file-resize"
 	},
 	"keywords": [
 		"quill",
@@ -31,9 +31,9 @@
 	],
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/kensnyder/quill-file-resize/issues"
+		"url": "https://github.com/marcos-velasquez/quill-file-resize/issues"
 	},
-	"homepage": "https://github.com/kensnyder/quill-file-resize#readme",
+	"homepage": "https://github.com/marcos-velasquez/quill-file-resize#readme",
 	"devDependencies": {
 		"babel-cli": "^6.24.0",
 		"babel-eslint": "^7.2.1",
