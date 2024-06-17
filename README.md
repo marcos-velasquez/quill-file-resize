@@ -5,10 +5,6 @@ A module for Quill rich text editor to allow images/videos to be resized.
 Also see [quill-image-drop-module](https://github.com/kensnyder/quill-image-drop-module),
 a module that enables copy-paste and drag/drop for Quill.
 
-## Demo
-
-[Plunker](https://plnkr.co/edit/gq708AOrSBOWSlHcFslG?p=preview)
-
 ## Usage
 
 ### Webpack/ES6
