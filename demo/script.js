@@ -1,6 +1,7 @@
-var quill = new Quill('#editor', {
-	theme: 'snow',
+var quill = new Quill("#editor", {
+	theme: "snow",
 	modules: {
-		imageResize: {}
-	}
+		toolbar: ["image", "video"],
+		fileResize: {},
+	},
 });
