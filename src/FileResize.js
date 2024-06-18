@@ -145,17 +145,17 @@ export default class FileResize {
   checkFile = (evt) => {
     if (this.file) {
       if (evt.keyCode == 46 || evt.keyCode == 8) {
-        (window.Quill || Quill).find(this.file).deleteAt(0);
+        (Quill || Quill).find(this.file).deleteAt(0);
       }
       this.hide();
     }
   };
 }
 
-if (window.Quill) {
+if (Quill) {
   const FileFormatAttributesList = ["alt", "height", "width", "style"];
 
-  var BaseVideoFormat = window.Quill.import("formats/video");
+  var BaseVideoFormat = Quill.import("formats/video");
   class VideoFormat extends BaseVideoFormat {
     static formats(domNode) {
       return FileFormatAttributesList.reduce(function (formats, attribute) {
@@ -178,7 +178,7 @@ if (window.Quill) {
     }
   }
 
-  var BaseImageFormat = window.Quill.import("formats/image");
+  var BaseImageFormat = Quill.import("formats/image");
   class ImageFormat extends BaseImageFormat {
     static formats(domNode) {
       return FileFormatAttributesList.reduce(function (formats, attribute) {
@@ -201,7 +201,7 @@ if (window.Quill) {
     }
   }
 
-  window.Quill.register(VideoFormat, true);
-  window.Quill.register(ImageFormat, true);
-  window.Quill.register("modules/fileResize", FileResize);
+  Quill.register(VideoFormat, true);
+  Quill.register(ImageFormat, true);
+  Quill.register("modules/fileResize", FileResize);
 }

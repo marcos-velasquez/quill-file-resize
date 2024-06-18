@@ -1,6 +1,6 @@
 {
 	"name": "quill-file-resize-module",
-	"version": "3.0.0",
+	"version": "3.0.1",
 	"description": "A module for Quill rich text editor to allow images/videos to be resized.",
 	"main": "file-resize.min.js",
 	"scripts": {
