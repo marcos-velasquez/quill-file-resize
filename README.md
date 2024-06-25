@@ -9,7 +9,9 @@ a module that enables copy-paste and drag/drop for Quill.
 
 ## Usage
 
+```javascript
 npm i quill-file-resize-module
+```
 
 ### Webpack/ES6
 
